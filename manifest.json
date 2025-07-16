@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "To-Do New Tab",
+  "description": "A clean, minimalistic to-do list that replaces your new tab page.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "assets/logos/icon16.png",
+    "32": "assets/logos/icon32.png",
+    "48": "assets/logos/icon48.png",
+    "128": "assets/logos/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": []
+} 

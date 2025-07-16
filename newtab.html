@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do New Tab</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="icons/icon32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="branding">
+      <img src="assets/logos/icon32.png" alt="To-Do New Tab logo" class="branding-logo" width="32" height="32" />
+      <span class="branding-title">To-Do New Tab</span>
+    </div>
+    <header>
+      <div id="datetime"></div>
+      <button id="theme-toggle" aria-label="Toggle light/dark mode" aria-pressed="false">
+        <span id="theme-icon"></span>
+      </button>
+    </header>
+    <main>
+      <h1>To-Do List</h1>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task..." autocomplete="off" maxlength="100" required />
+        <button type="submit" aria-label="Add task">+</button>
+      </form>
+      <div id="empty-state" style="display:none;">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><rect x="10" y="20" width="60" height="40" rx="12" fill="#e0f7fa"/><rect x="20" y="32" width="40" height="8" rx="4" fill="#b2dfdb"/><rect x="20" y="46" width="24" height="8" rx="4" fill="#b2dfdb"/></svg>
+        <div class="empty-text">No tasks yet. Add your first to-do!</div>
+      </div>
+      <ul id="todo-list"></ul>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
